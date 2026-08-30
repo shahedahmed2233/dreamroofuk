@@ -244,7 +244,7 @@ function Index() {
           <p className="mt-4 max-w-2xl text-[15px] text-muted-foreground">
             See the difference professional roofing work can make.
           </p>
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
             <BeforeAfterCard
               label="Roof Repair"
               before={before1}
