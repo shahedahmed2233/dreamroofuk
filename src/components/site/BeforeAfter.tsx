@@ -74,10 +74,10 @@ export function BeforeAfterCard({ label, before, after, beforeAlt, afterAlt }: P
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        {/* Before image clipped from the left */}
+        {/* Before image clipped from the left via clip-path (stays aligned at any size) */}
         <div
-          className="absolute inset-0 overflow-hidden"
-          style={{ width: `${position}%` }}
+          className="absolute inset-0"
+          style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
         >
           <img
             src={before}
@@ -86,8 +86,7 @@ export function BeforeAfterCard({ label, before, after, beforeAlt, afterAlt }: P
             width={900}
             height={700}
             draggable={false}
-            className="absolute inset-0 h-full object-cover"
-            style={{ width: containerRef.current?.clientWidth ?? "100%" }}
+            className="absolute inset-0 h-full w-full object-cover"
           />
         </div>
 
