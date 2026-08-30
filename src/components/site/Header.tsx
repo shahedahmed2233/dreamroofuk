@@ -68,8 +68,8 @@ export function Header() {
             onClick={() => setOpen((v) => !v)}
             className={`lg:hidden ${scrolled ? "text-foreground" : "text-charcoal-foreground"}`}
           >
-            {open ? <Menu className="hidden" /> : null}
             {open ? <X className="size-6" /> : <Menu className="size-6" />}
+
           </button>
         </div>
       </div>
