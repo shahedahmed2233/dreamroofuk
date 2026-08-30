@@ -33,9 +33,10 @@ export function Header() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
         <a
           href="#home"
-          className={`font-display text-xl font-700 tracking-[0.12em] sm:text-2xl ${
+          className={`font-display text-xl font-bold tracking-[0.12em] sm:text-2xl ${
             scrolled ? "text-foreground" : "text-charcoal-foreground"
           }`}
+
         >
           DREAM ROOF <span className="text-accent">UK</span>
         </a>
