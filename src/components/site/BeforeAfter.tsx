@@ -59,7 +59,7 @@ export function BeforeAfterCard({ label, before, after, beforeAlt, afterAlt }: P
           if (e.key === "ArrowLeft") setPosition((p) => Math.max(0, p - 4));
           if (e.key === "ArrowRight") setPosition((p) => Math.min(100, p + 4));
         }}
-        className={`relative aspect-4/3 w-full touch-none select-none overflow-hidden outline-none ${
+        className={`relative aspect-3/2 w-full touch-none select-none overflow-hidden outline-none ${
           dragging ? "cursor-grabbing" : "cursor-grab"
         }`}
       >
